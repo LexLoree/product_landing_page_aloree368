@@ -1,0 +1,538 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+  
+  
+  /*HEADER*/
+  
+  
+  
+   header {
+   background-color: #444444;
+     height: 700px;
+     width: 100%;
+    }
+  
+  
+  #nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Keeps logo/title on left, links on right */
+      padding: 20px;
+      background-color: #444;
+      color: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+    z-index:  3;
+  }
+  
+  #logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Space between logo and title */
+  }
+  
+  #logo-title p {
+      font-family: Cardo;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 26%;
+  
+  }
+  
+  #header-img {
+   object-fit: scale-down;
+   height: 35px;
+  }
+  
+  .nav-link {
+      display: flex;
+      justify-content: flex-end;  /* Aligns links to the right */
+      align-items: center; 
+      gap: 20px; /* Controls spacing, reduce if needed */
+  }
+  
+  .nav-link a {
+      text-decoration: none;
+      color: white;
+      padding: 5px 10px; /* Adjust padding instead of relying on gap */
+  }
+  
+  a:link {
+    color: white;
+  }
+  
+  a:hover {
+    color: #D46161;
+  }
+  
+  #page-title {
+      display: flex;
+      align-items: center; /* Aligns text and image */
+      gap: 20px; /* Adds spacing between title and image */
+  }
+  
+  /*BODY*/
+  
+    
+   
+    h1 {
+    font-family: Cardo;
+    font-weight: 700;
+    font-size: 64px;
+    leading-trim: Cap height;
+    line-height: 100%;
+    letter-spacing: 3%;
+  
+    max-width: 855px;
+    padding: 40px;
+    margin-top: 75px;
+    
+    display: inline-block;
+    }
+  
+  h2 {
+    font-family: Cardo;
+    font-weight: 700;
+    font-size: 48px;
+    leading-trim: Cap height;
+    line-height: 100%;
+    letter-spacing: 3%;
+    padding: 40px;
+  }
+  
+  p {
+    font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 20px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 3%;
+  
+  }
+  
+  
+  
+  #main-img {
+    height: 45%;
+    width: 45%;
+  
+    top: -540px;
+    left: 700px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .hero-text {
+    color: #e6e5e5;
+  }
+  
+  #event-info {
+    max-width: 575px;
+    padding: 40px;
+  }
+  
+  .cta-button-top {
+    font-family: Cardo;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background: #CC1E1E;
+  
+    
+    padding: 10px;
+    margin: 0px auto 40px 40px;
+  }
+  
+  .cta-button-top:hover {
+    color: #000;
+  }
+  
+  .cta-button-top:active {
+    background-color: #000;
+  }
+  
+  #main-img
+  
+  
+  /*EVENT FEATURES*/
+  
+  
+  
+  
+  h2, .feature-title {
+   padding-top: 60px;
+    max-width: 675px;
+  }
+  
+  .icons {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+  }
+  
+  h3 {
+    font-family: Cardo;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    padding: 0 0 32px 40px;
+  }
+  
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 40px 20px 40px;
+  }
+  
+  
+  .soundbar {
+    margin-left: 20px;
+  }
+  
+  
+  
+  
+  /*VIDEO SECTION*/
+  
+  
+  
+  
+  
+  
+  iframe {
+    margin: 40px;
+  }
+  
+  #video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    
+    padding: 40px 150px 100px 150px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*PRICING CARDS*/
+  
+  
+  
+  
+  
+  
+  
+    .price-img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+  }
+    
+    .image-container {
+      width: 300px;
+      height: 300px;
+    }
+   .price {
+      font-size: 20px;
+    }
+    
+    #pricing-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  
+    }
+    
+    .price-card {
+      background-color: #444444;
+      
+      margin-bottom: 30px;
+      margin-left: 36px;
+      padding: 30px;
+      position: relative;
+      padding-top: 30px;
+      
+      color: #e6e5e5;
+      text-align: left;
+      float: left;
+      
+      width: 100%;
+      min-width: 250px; /* Prevent cards from becoming too narrow */
+      max-width: 400px; /* Prevent cards from becoming too wide on large screens */
+      z-index: -1;
+    }
+  
+    li {
+      font-family: "Josefin Sans", sans-serif;
+    }
+    
+    .card-title {
+    
+      background-color: #444444;
+      color: white;
+    
+    }
+    
+    .card-title h4 {
+      font-size: 1.25em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .price {
+      margin: 10px 0 10px 0px;
+    }
+    
+  
+    .features {
+      
+      margin: 10px 0 30px 20px;
+    }
+    
+    .features li {
+    padding: 5px;
+    font-size: 1.1em;
+  
+    }
+    
+    .features li:last-child {
+      border-bottom: none;
+    }
+    
+    .price-card .cta-button-pc {
+      background-color: #CC1E1E;
+      color: white;
+      font-family: "Cardo", serif;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+    
+    .cta-button-pc:hover {
+      opacity: 0.9;
+      color: black;
+    }
+    
+    
+  
+  
+  
+  
+  /*FOOTER*/
+  
+  
+  
+  
+  
+  
+  
+  #join-now {
+    margin: 40px auto;
+  }
+  
+  #submit {
+    font-family: Cardo;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+  
+    padding: 5px 10px;
+    background: #CC1E1E;
+    border: 0px;
+  }
+  
+  #email {
+    padding: 6px 10px;
+    margin-right: 20px;
+    border: 0px;
+    
+    width: 400px;
+    
+    font-family: Josefin Sans;
+    font-size: 18px;
+  }
+  
+  h5 {
+  
+    margin: 20px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+  
+  }
+  
+  .copyright-and-socials{
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: Josefin Sans;
+    font-size: 16px;
+    color: #e6e5e5;
+    
+    background: #444444;
+    padding: 20px
+  }
+  
+  .social-icons {
+    text-decoration: none;
+    color: #E6E5E5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .socials {
+    padding-right: 10px; 
+  }
+  
+  footer {
+  background: #D9D9D9;
+  text-align: center;
+  padding-top: 25px;
+  }
+  
+  
+  
+  
+        <!-- MEDIA -->
+  
+  
+  
+  
+    @media (min-width: 768px) and (max-width: 991px) {
+      .price-card {
+        width: 45%;
+        margin: 0 2% 30px 2%;
+      }
+    
+      .price-card:nth-child(3) {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #navbar {
+          position: sticky;
+          top: 0;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          max-height: 275px;
+          border: none;
+          z-index: 1;
+          border-bottom: 2px solid;
+          text-align: center;
+  
+      }
+    
+    
+      #nav-title{
+          width: 100% !important;
+          margin: 14px auto 10px auto;
+         
+          font-size: 28px;
+      }
+    
+    
+    #nav-description {
+          margin-top: 14px;
+          margin-left: 36px;
+          margin-bottom: 10px;
+        }
+    
+    
+    .nav-link {
+          width: 100%;
+          margin-top: 0px;
+    }
+    
+    
+    #navdiv {
+          margin: -10px auto 10px auto;
+    }
+    
+    }
+  
+    /* Desktop View (992px and above) */
+    @media (min-width: 992px) {
+      .price-card {
+        width: 30%;
+        margin: 0 1.5% 30px 1.5%;
+      }
+    }
+    .price-card {
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .price-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
